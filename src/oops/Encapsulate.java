@@ -1,3 +1,4 @@
+package oops;
 /*
 Encapsulation in Java is an object-oriented programming concept that refers 
 to the bundling of data and methods that operate on that data within a single unit, 
