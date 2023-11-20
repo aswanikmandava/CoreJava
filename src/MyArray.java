@@ -1,6 +1,9 @@
+import java.util.Arrays;
 
 public class MyArray {
     public static void main(String[] args) {
+        // declare and initialize and int array
+        // int[] my_arr = {10, 20, 30};
         // declare an int array
         int[] my_arr = new int[3];
         // init some random values to it using for loop and Math.random method

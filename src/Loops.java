@@ -21,5 +21,12 @@ public class Loops {
         for (int number=0; number < 5; number++) {
             System.out.println("Number: " + number);
         }
+
+        String[] fruits = {"banana", "strawberry", "mango", "avocado"};
+
+        // foreach loop (enhanced for loop which loops over sequence)
+        for (String f:fruits) {
+            System.out.println("Fruit: " + f);
+        }
     }
 }

@@ -54,6 +54,10 @@ public class MyStatic {
         System.out.println("i2 model: " + i2.getModel());
         System.out.println("i2 price: " + i2.getPrice());
         System.out.println("i2 manufacturer (using static var): " + iPhone.manufacturer);
+        // it is not required to access static var using object,
+        // instead we can use its class
+        // the following won't cause error but, can give warning
+        System.out.println("Accessing static var using object: " + i2.manufacturer);
         System.out.println("i2 manufacturer (using static method): " + iPhone.getManufacturer());
     }
 }
