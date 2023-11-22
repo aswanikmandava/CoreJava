@@ -15,6 +15,27 @@ Note that an abstract class cannot be instantiated directly.
 You can only create objects of a subclass that extends an abstract class.
 */
 
+abstract class Animal {
+    public void move() {
+        System.out.println(this.getClass().getSimpleName() + " is moving");
+    }
+
+    public abstract void makeSound();
+}
+
+class Dog extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Bow Bow !!!");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void makeSound() {
+        System.out.println("Meow Meow !!!");
+    }
+}
 
 abstract class Car {
     protected String make;
@@ -45,10 +66,18 @@ class Civic extends Car {
 }
 
 
-public class AbstractClass {
+public class Abstraction {
     public static void main(String[] args) {
         Civic c = new Civic("Honda", "Civic", 2008);
         c.start();
         c.displayDashboard();
+
+        Animal d = new Dog();
+        d.move();
+        d.makeSound();
+
+        Animal ct = new Cat();
+        ct.move();
+        ct.makeSound();
     }
 }

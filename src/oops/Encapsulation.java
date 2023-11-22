@@ -47,8 +47,8 @@ class Human {
 }
 
 
-public class Encapsulate {
-    public static void main(String args[]) {
+public class Encapsulation {
+    public static void main(String[] args) {
         Human h1 = new Human();
         h1.setAge(39);
         h1.setName("Aswani");
