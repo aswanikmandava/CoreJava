@@ -1,4 +1,4 @@
-package collectionframework;
+package src.collectionframework;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -37,7 +37,7 @@ class Student implements Comparable<Student> {
 
 }
 
-public class MyObjectComparatorv2 {
+public class MyObjectComparable {
     public static void main(String[] args) {
         List<Student> st = new ArrayList<>();
         st.add(new Student("Anil", 2002));
