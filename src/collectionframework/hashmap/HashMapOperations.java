@@ -3,6 +3,7 @@ package src.collectionframework.hashmap;
 import java.util.Collection;
 import java.util.Map;
 import java.util.HashMap;
+import java.util.Map.Entry;
 import java.util.Set;
 public class HashMapOperations {
     public static void main(String[] args) {
@@ -41,6 +42,12 @@ public class HashMapOperations {
         Collection<Integer> values = m.values();
         for (Integer v : values) {
             System.out.println(v);
+        }
+
+        // fetch key value pairs
+        Set<Entry<String, Integer>> es = m.entrySet(); // returns a Set of Entry objects
+        for (Entry<String, Integer> kv : es) {
+            System.out.println("Key: " + kv.getKey() + ", Value: " + kv.getValue());
         }
 
         System.out.println("Is HashMap empty? " + m.isEmpty());
